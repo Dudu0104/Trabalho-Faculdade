@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Desafio Front-End</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>SMARTSHOP</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <!-- Destaque -->
+    <section class="destaque">
+        <div id="visualizacao">
+            <img src="img/img-0.png" alt="Imagem maior" id="imagemVisualizacao">
+        <ul id="selecionar-imagem">
+            <li>
+                <label>
+                    <input
+                        type="radio"
+                        name="opcao-imagem"
+                        id="0-img"
+                        onclick="atualizarImagemSelecionada()">
+                    <img src="img/img-0.png" alt="">
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input
+                        type="radio"
+                        name="opcao-imagem"
+                        id="1-img"
+                        onclick="atualizarImagemSelecionada()">
+                    <img src="img/img-1.png" alt="">
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input
+                        type="radio"
+                        name="opcao-imagem"
+                        id="2-img"
+                        onclick="atualizarImagemSelecionada()">
+                    <img src="img/img-2.png" alt="">
+                </label>
+            </li>
+        </ul>
+        </div>
+        <div id="info-produto">
+            <h2>Apple Watch Series 11</h2>
+            <p>Resistência à água e poeira. O Apple Watch Series 11 tem classificação WR50M8 e IP6X9. Não arrepia para piscina ou mar, vai até seis metros de profundidade e ainda tem proteção total contra poeira.</p>
+            <p>Design fino. O Apple Watch Series 11 é nosso relógio mais fino e confortável para usar dia e noite, assim você não deixa de monitorar seus sinais vitais nem enquanto dorme.</p>
+            <a href="#" class="btn">Comprar Agora</a>
+        </div>
+    </section>
+    <!-- Recursos -->
+        <section id="container">
+                <ul class="descricao">
+                    <li>
+                        <svg aria-hidden="true" width="100" height="80" viewBox="0 0 35 56">
+                            <path d="M39.97 19.152c-.352-.38-.815-.572-1.387-.572H38V18a8 8 0 0 0-8-8H14a7.98 7.98 0 0 0-6.24 3h2.93c.95-.63 2.087-1 3.31-1h16c3.308 0 6 2.692 6 6v20c0 3.309-2.692 6-6 6h-1.393a8.767 8.767 0 0 1-1.769 2H30a8 8 0 0 0 8-8V26.476h.583c.572 0 1.035-.195 1.388-.586.353-.391.529-.901.529-1.53v-3.691c0-.63-.177-1.134-.53-1.516zM28 28.91h.546c.478 0 .864-.163 1.158-.49.295-.326.442-.752.442-1.277v-3.08c0-.526-.147-.948-.442-1.266-.294-.318-.68-.478-1.158-.478H28v-.61A6.707 6.707 0 0 0 21.293 15H6.707A6.707 6.707 0 0 0 0 21.707v17.586A6.707 6.707 0 0 0 6.707 46h14.586A6.707 6.707 0 0 0 28 39.293V28.909zm-2 10.384A4.713 4.713 0 0 1 21.293 44H6.707A4.713 4.713 0 0 1 2 39.293V21.707A4.713 4.713 0 0 1 6.707 17h14.586A4.713 4.713 0 0 1 26 21.707v17.586z">
+                        </path>
+                        </svg>
+                        <div class="texto">
+                            <p>Caixa de alumínio de 44 mm ou 40 mm</p>
+                        </div>
+                    </li>
+                    <li>
+                        <svg width="100" height="80" viewBox="-10 10 56 55">
+                            <path fill="none" d="M0 0H35V56H0z"></path>
+                            <path d="M24 14H8c-2.206 0-4 1.794-4 4v20c0 2.206 1.794 4 4 4h16c2.206 0 4-1.794 4-4V18c0-2.206-1.794-4-4-4zm.663 7.321l-8.017 7.091a.999.999 0 0 1-1.304.019l-4.983-4.162a1 1 0 1 1 1.282-1.536l4.324 3.612 7.372-6.522a1 1 0 0 1 1.326 1.498zm9.308-2.169c-.353-.38-.816-.572-1.388-.572H32V18a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v20a8 8 0 0 0 8 8h16a8 8 0 0 0 8-8V26.476h.583c.572 0 1.035-.195 1.388-.587.353-.39.529-.9.529-1.53v-3.69c0-.63-.176-1.135-.53-1.516zM30 38c0 3.308-2.692 6-6 6H8c-3.308 0-6-2.692-6-6V18c0-3.308 2.692-6 6-6h16c3.308 0 6 2.692 6 6v20z">
+                            </path>
+                        </svg>
+                        <div class="texto">
+                            <p>Tela Retina Sempre Ativa</p>
+                            <p>Até 1000 nits de brilho</p>
+                            <p>OLED</p>
+                            <p>LTPO</p>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <svg aria-hidden="true" width="100" height="80" viewBox="-10 15 56 55">
+                            <g id="battery.100percent.bolt_elevated_np"></g>
+                                <rect width="46" height="56" fill="none"></rect>
+                                    <path d="M29.104,28.6835c.6052-.7096,.734-1.4279,.734-1.9103,0-.7761-.3143-1.4846-.8851-1.9949-.515-.4604-1.158-.7037-1.8596-.7037h-2.6116l1.6974-4.5746h8.8209c1.9297,0,3.5,1.5703,3.5,3.5v10c0,1.9297-1.5703,3.5-3.5,3.5h-12.0889l6.1929-7.8165Zm-10.1808-9.1835H7c-1.9297,0-3.5,1.5703-3.5,3.5v10c0,1.9297,1.5703,3.5,3.5,3.5H15.6589l1.6973-4.5746h-2.6115c-.698,0-1.3392-.2418-1.8595-.7037-.5709-.5104-.8853-1.2189-.8853-1.995,0-.4769,.1267-1.1934,.725-1.9141l6.1982-7.8126Zm-3.6979,18.5H7c-2.7568,0-5-2.2432-5-5v-10c0-2.7568,2.2432-5,5-5h13.1133l1.464-1.8453,.0177-.0223,.0183-.0219c.0349-.0416,.0768-.0711,.113-.1105H7c-3.8594,0-7,3.1406-7,7v10c0,3.8594,3.1406,7,7,7H15.8604c-.0529-.0634-.1155-.1159-.1632-.1847-.236-.3362-.5485-.9603-.4718-1.8153Zm19.7747-22h-9.0142c.0591,.0716,.1284,.1321,.1809,.2104,.2263,.3337,.5255,.9503,.4486,1.7896h8.3846c2.7568,0,5,2.2432,5,5v10c0,2.7568-2.2432,5-5,5h-13.2772l-1.4612,1.8443-.0168,.0212-.0173,.0208c-.0358,.0428-.0786,.0732-.1158,.1137h14.8884c3.8594,0,7-3.1406,7-7v-10c0-3.8594-3.1406-7-7-7Zm8.4954,8.5v7c1.0635-.0717,2.5-1.4373,2.5-3.5071,0-2.0556-1.4365-3.4354-2.5-3.4929Zm-15.9319,2.9073c.1823-.2059,.2745-.4169,.2745-.6341,0-.2059-.0728-.374-.2183-.504-.1455-.1301-.3217-.1946-.5265-.1946h-5.4869l2.4396-6.5746,.4904-1.3217c.0245-.0656,.0199-.1174,.0345-.1783,.0632-.2616,.0597-.4916-.0592-.6669-.1454-.2172-.3534-.3278-.6228-.3329-.006-.0001-.0118-.0002-.0178-.0002-.2626,0-.5045,.1332-.7269,.3976l-.4779,.6024-1.1901,1.5-7.2006,9.0762c-.1843,.2172-.2755,.4343-.2755,.6505,0,.2059,.0728,.3739,.2183,.504,.1454,.1291,.3217,.1946,.5265,.1946h5.4868l-2.4393,6.5746-.4905,1.3217c-.0244,.0656-.0192,.1174-.0337,.1783-.0619,.2616-.0566,.4915,.0664,.6669,.1506,.2172,.3586,.3278,.6229,.3329,.0059,.0001,.0116,.0002,.0175,.0002,.2577,0,.4977-.1332,.7191-.3977l.4772-.6023,1.1885-1.5,7.2039-9.0927Z"></path>
+                        </svg>
+                        <div class="texto">
+                            <p>Até 18 horas</p>
+                            <p>Até 32 horas no Modo Pouca Energia</p>
+                            <p>Compatível com recarga rápida</p>
+                            <p>(0 a 80% em cerca de 45 minutos; 15 minutos para até 8 horas)</p>
+                        </div>
+                    </li>
+                </ul>
+            <div class="direita">
+                <img src="img/celular.jpg" alt="Celular">
+                <p><b>Veja as métricas dos seus treinos no iPhone.</b> Os dados de atividade física do Apple Watch Series 11 aparecem no app Fitness do iPhone. Observe seus progressos, veja os treinos concluídos, mude suas metas e compartilhe as atividades com quem quiser.</p>
+            </div>
+        </section>
+    <script src="script.js" defer></script>
+</body>
+</html>
